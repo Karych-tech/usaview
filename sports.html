@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+  Sports & Football Live Match Hub for USAView.us.
+  - Interactive live match search and category filtering for football, soccer, NFL, UFC, and more.
+  - Uses the same styling from style.css and interactive features from scripts.js.
+-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Football & Sports Streaming | Premier League, NFL, NBA & UFC</title>
+    <meta name="description"
+        content="Stream live football, Premier League, Champions League, NFL, NBA, LaLiga & UFC in HD & 4K across the USA. Explore match schedules and start streaming today." />
+    <link rel="canonical" href="https://usaview.us/sports.html" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Live Football & Sports Streaming | Premier League, NFL, NBA & UFC" />
+    <meta property="og:description"
+        content="Stream live football, soccer, NFL, NBA, UFC, and major sports networks in HD & 4K on your Smart TV, phone, or streaming device across the USA." />
+    <meta property="og:url" content="https://usaview.us/sports.html" />
+    <meta property="og:site_name" content="USAView" />
+    <meta property="og:image" content="https://usaview.us/logo.webp" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Live Football & Sports Streaming | Premier League, NFL, NBA & UFC" />
+    <meta name="twitter:description"
+        content="Stream live football, soccer, NFL, NBA, UFC, and major sports networks in HD & 4K on your Smart TV, phone, or streaming device across the USA." />
+    <meta name="twitter:image" content="https://usaview.us/logo.webp" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://usaview.us/#organization",
+          "name": "USAView",
+          "url": "https://usaview.us",
+          "logo": "https://usaview.us/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-800-555-0148",
+            "contactType": "customer service",
+            "email": "support@usaview.us"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://usaview.us/#website",
+          "url": "https://usaview.us",
+          "name": "USAView",
+          "publisher": {
+            "@id": "https://usaview.us/#organization"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://usaview.us/sports.html#webpage",
+          "url": "https://usaview.us/sports.html",
+          "name": "Live Football & Sports Streaming | Premier League, NFL, NBA & UFC",
+          "description": "Stream live football, Premier League, Champions League, NFL, NBA, LaLiga & UFC in HD & 4K across the USA. Explore match schedules and start streaming today.",
+          "isPartOf": {
+            "@id": "https://usaview.us/#website"
+          },
+          "about": {
+            "@id": "https://usaview.us/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://usaview.us/sports.html#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://usaview.us/sports.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://usaview.us/index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Sports & Football Streaming",
+              "item": "https://usaview.us/sports.html"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What football leagues can I watch on USAView?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "USAView provides access to major football and soccer leagues including the English Premier League, UEFA Champions League, LaLiga, Bundesliga, Serie A, and Major League Soccer (MLS), alongside domestic cup competitions and international tournaments."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I watch Premier League matches live?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, live Premier League fixtures are accessible on matchdays across weekend kickoffs and midweek rounds, subject to regional broadcast availability and service plans."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I watch Champions League football?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, UEFA Champions League tournament matchdays—including group stage matches, knockout stages, and the final—are available through sports networks on the platform."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I watch live soccer in the USA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, viewers across the United States can stream live soccer matches from MLS, European leagues, South American competitions, and international fixtures."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What sports are available besides football?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In addition to live football and soccer, you can watch American sports including NFL football, NBA basketball, MLB baseball, and NHL hockey, alongside UFC fight nights, boxing championship events, and motorsports."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I watch sports on Smart TV?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, the service is compatible with Smart TVs (Samsung, LG, Sony, Android TV), Amazon Fire TV Stick, Apple TV, iOS (iPhone/iPad), Android devices, and web browsers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does the service support HD or 4K?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, live sports streams are delivered in High Definition (HD) and 4K where supported by the underlying broadcast source, featuring high-framerate 60FPS video for smooth action."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are sports schedules available?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, a real-time Electronic Program Guide (EPG) provides up-to-date kickoff schedules, fixture listings, and channel information so you never miss a match."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav aria-label="Main Navigation">
+                <a class="logo" href="index.html" aria-label="USAView Home">
+                    <img src="logo.webp" alt="USAView logo" width="160" height="44">
+                </a>
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"
+                    aria-controls="navLinks">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <a href="movies.html">Movies</a>
+                    <a href="sports.html" class="active" aria-current="page">Sports</a>
+                    <a href="index.html#plans">Plans</a>
+                    <a href="about.html">About Us</a>
+                    <a href="index.html#faq">FAQ</a>
+                </div>
+                <a class="btn btn-primary btn-header" href="index.html#plans">Start Free Trial</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-content">
+                <div class="reveal">
+                    <div class="pill">⚽ Live Football & Sports Streaming USA</div>
+                    <h1 id="hero-title">Live Football & Sports Streaming</h1>
+                    <p>Stream live football matches, international soccer tournaments, primetime US sports, and major
+                        combat events in crystal-clear HD and 60FPS 4K. USAView provides high-performance sports
+                        streaming across the Premier League, UEFA Champions League, LaLiga, NFL, NBA, UFC, and more on
+                        your favorite devices. <em>Streaming availability and broadcast feeds may vary by location and
+                            plan.</em></p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="index.html#plans">Start Free Trial</a>
+                        <a class="btn btn-secondary" href="#sports-coverage">Explore Sports Coverage</a>
+                    </div>
+                    <div class="stats-grid-4">
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="1500" data-suffix="+">0</div>
+                            <div class="stat-label">Sports Channels & Feeds</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="60" data-suffix=" FPS">0</div>
+                            <div class="stat-label">Ultra-Smooth Motion</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="4" data-suffix="K / HD">0</div>
+                            <div class="stat-label">Crisp Video Quality</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="99.9" data-suffix="%" data-decimals="1">0</div>
+                            <div class="stat-label">High Server Uptime</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <div class="hero-card glass">
+                        <div class="floating-orb one"></div>
+                        <div class="floating-orb two"></div>
+                        <div class="pill">Match Day Central</div>
+                        <h3>The Ultimate Front Row Experience</h3>
+                        <ul>
+                            <li>Premier League, Champions League, LaLiga, Serie A, Bundesliga & MLS</li>
+                            <li>NFL Football, NBA Basketball, MLB Baseball & NHL Hockey</li>
+                            <li>UFC Fight Nights, MMA championship cards & major boxing events</li>
+                            <li>Multi-device 60FPS high-bitrate streaming on Smart TV, mobile & PC</li>
+                        </ul>
+                        <div class="hero-logo"><img src="logo.webp" alt="USAView live sports streaming platform"
+                                width="220" height="60"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Sports & Match Coverage Section -->
+        <section id="sports-coverage" aria-labelledby="coverage-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <div class="pill">🏆 Major Sports & Competitions</div>
+                        <h2 id="coverage-title">Live Sports & Match Coverage</h2>
+                        <p>Discover football and sports coverage from major leagues and competitions around the world.
+                            Explore popular football leagues, American sports, combat sports, and other major sporting
+                            events in one place.</p>
+                    </div>
+                </div>
+
+                <div class="channels-static-grid">
+                    <!-- 1. Football & Soccer -->
+                    <div class="sports-card glass reveal">
+                        <div class="sport-icon" aria-hidden="true">⚽</div>
+                        <h3>Football & Soccer</h3>
+                        <p>Follow major football competitions including the Premier League, UEFA Champions League,
+                            LaLiga, Bundesliga, Serie A and MLS. Coverage and availability may vary by location and
+                            plan.</p>
+                        <div class="badge-row">
+                            <span class="pill-small">FOOTBALL COVERAGE</span>
+                            <span class="pill-small">GLOBAL LEAGUES</span>
+                        </div>
+                    </div>
+
+                    <!-- 2. American Sports -->
+                    <div class="sports-card glass reveal">
+                        <div class="sport-icon" aria-hidden="true">🏈</div>
+                        <h3>American Sports</h3>
+                        <p>Explore coverage of NFL, NBA, MLB and NHL throughout their respective seasons, with
+                            availability depending on the service and your location.</p>
+                        <div class="badge-row">
+                            <span class="pill-small">US SPORTS</span>
+                            <span class="pill-small">MAJOR LEAGUES</span>
+                        </div>
+                    </div>
+
+                    <!-- 3. UFC & Boxing -->
+                    <div class="sports-card glass reveal">
+                        <div class="sport-icon" aria-hidden="true">🥊</div>
+                        <h3>UFC & Boxing</h3>
+                        <p>Stay connected to major UFC events, championship bouts and notable boxing events. Event
+                            availability may vary.</p>
+                        <div class="badge-row">
+                            <span class="pill-small">COMBAT SPORTS</span>
+                            <span class="pill-small">CHAMPIONSHIP BOUTS</span>
+                        </div>
+                    </div>
+
+                    <!-- 4. Sports Viewing -->
+                    <div class="sports-card glass reveal">
+                        <div class="sport-icon" aria-hidden="true">📺</div>
+                        <h3>Sports Viewing</h3>
+                        <p>Find sports coverage across supported TVs, streaming devices, smartphones, tablets and
+                            computers, depending on device compatibility and your plan.</p>
+                        <div class="badge-row">
+                            <span class="pill-small">ANY DEVICE</span>
+                            <span class="pill-small">HD & 4K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Football & Soccer Leagues Section -->
+        <section id="football-leagues" aria-labelledby="football-heading">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <div class="pill">⚽ Global Football Coverage</div>
+                        <h2 id="football-heading">Major Football & Soccer Leagues</h2>
+                        <p>Stream Europe's most competitive domestic football leagues, elite continental cup
+                            tournaments, and live soccer in the United States.</p>
+                    </div>
+                </div>
+
+                <div class="channels-static-grid">
+                    <!-- 1. Premier League -->
+                    <div class="sports-card glass reveal">
+                        <div class="sport-icon" aria-hidden="true">⚽</div>
+                        <h3>Premier League</h3>
+                        <p>Follow English Premier League streaming with live coverage of title races, London and
+                            Manchester derbies, and weekend morning kickoffs featuring the world's most watched football
+                            clubs.</p>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE MATCHES</span>
+                            <span class="pill-small">HD / 4K 60FPS</span>
+                        </div>
+                    </div>
+
+                    <!-- 2. UEFA Champions League -->
+                    <div class="sports-card glass reveal">
+                        <div class="sport-icon" aria-hidden="true">🏆</div>
+                        <h3>UEFA Champions League</h3>
+                        <p>Experience European club football at its peak with live Champions League streaming covering
+                            group stage clashes, knockout drama, and the iconic Champions League Final.</p>
+                        <div class="badge-row">
+                            <span class="pill-small">MIDWEEK LIVE</span>
+                            <span class="pill-small">4K HDR</span>
+                        </div>
+                    </div>
+
+                    <!-- 3. LaLiga -->
+                    <div class="sports-card glass reveal">
+                        <div class="sport-icon" aria-hidden="true">🇪🇸</div>
+                        <h3>LaLiga</h3>
+                        <p>Catch Spanish football action with comprehensive LaLiga streaming, including El Clásico
+                            showdowns, Real Madrid, Barcelona, and Atlético Madrid with multi-language commentary feeds.
+                        </p>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE MATCHES</span>
+                            <span class="pill-small">HD / 4K</span>
+                        </div>
+                    </div>
+
+                    <!-- 4. Bundesliga -->
+                    <div class="sports-card glass reveal">
+                        <div class="sport-icon" aria-hidden="true">🇩🇪</div>
+                        <h3>Bundesliga</h3>
+                        <p>Stream Germany's top-tier football league with high-tempo attacking play, featuring Bayern
+                            Munich, Borussia Dortmund, Bayer Leverkusen, and fierce Revierderby rivalries.</p>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE MATCHES</span>
+                            <span class="pill-small">60FPS HD</span>
+                        </div>
+                    </div>
+
+                    <!-- 5. Serie A -->
+                    <div class="sports-card glass reveal">
+                        <div class="sport-icon" aria-hidden="true">🇮🇹</div>
+                        <h3>Serie A</h3>
+                        <p>Follow Italian Serie A streaming featuring tactical masterclasses and historic rivalries
+                            between Juventus, Inter Milan, AC Milan, Napoli, and AS Roma.</p>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE MATCHES</span>
+                            <span class="pill-small">HD / 4K</span>
+                        </div>
+                    </div>
+
+                    <!-- 6. MLS -->
+                    <div class="sports-card glass reveal">
+                        <div class="sport-icon" aria-hidden="true">🇺🇸</div>
+                        <h3>Major League Soccer (MLS)</h3>
+                        <p>Watch live soccer streaming USA with full coverage of Major League Soccer, featuring
+                            conference rivalries, marquee international signings, and the MLS Cup playoffs.</p>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE SOCCER</span>
+                            <span class="pill-small">HD QUALITY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- American Sports, UFC & Boxing Section -->
+        <section id="american-sports" aria-labelledby="american-sports-heading">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <div class="pill">🏈 American Sports & Combat Hub</div>
+                        <h2 id="american-sports-heading">NFL, NBA, MLB, NHL & Combat Sports</h2>
+                        <p>From primetime gridiron battles to championship fight cards, enjoy live sports streaming
+                            across America's major athletic competitions.</p>
+                    </div>
+                </div>
+
+                <div class="channels-static-grid">
+                    <!-- 7. NFL -->
+                    <div class="sports-card glass reveal">
+                        <div class="sport-icon" aria-hidden="true">🏈</div>
+                        <h3>NFL Football</h3>
+                        <p>Follow live NFL streaming throughout the regular season, Sunday afternoon kickoffs, Monday
+                            Night games, and the postseason road to the Super Bowl.</p>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE GAMES</span>
+                            <span class="pill-small">4K / HD</span>
+                        </div>
+                    </div>
+
+                    <!-- 8. NBA -->
+                    <div class="sports-card glass reveal">
+                        <div class="sport-icon" aria-hidden="true">🏀</div>
+                        <h3>NBA Basketball</h3>
+                        <p>Stream NBA basketball live, from Opening Night matchups and the NBA In-Season Tournament to
+                            primetime showcase games and the complete NBA Playoffs.</p>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE GAMES</span>
+                            <span class="pill-small">60FPS HD</span>
+                        </div>
+                    </div>
+
+                    <!-- 9. MLB -->
+                    <div class="sports-card glass reveal">
+                        <div class="sport-icon" aria-hidden="true">⚾</div>
+                        <h3>MLB Baseball</h3>
+                        <p>Catch America's pastime with live MLB streaming from Opening Day through summer pennant
+                            races, the All-Star Classic, and the October World Series.</p>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE BASEBALL</span>
+                            <span class="pill-small">HD FEEDS</span>
+                        </div>
+                    </div>
+
+                    <!-- 10. NHL -->
+                    <div class="sports-card glass reveal">
+                        <div class="sport-icon" aria-hidden="true">🏒</div>
+                        <h3>NHL Hockey</h3>
+                        <p>Experience fast-paced professional ice hockey with live NHL streaming, covering intense
+                            divisional matchups and the battle for the Stanley Cup.</p>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE HOCKEY</span>
+                            <span class="pill-small">60FPS HD</span>
+                        </div>
+                    </div>
+
+                    <!-- 11. UFC -->
+                    <div class="sports-card glass reveal">
+                        <div class="sport-icon" aria-hidden="true">🥊</div>
+                        <h3>UFC & Mixed Martial Arts</h3>
+                        <p>Stream UFC fight nights, prelims, championship main cards, and marquee MMA events featuring
+                            top-ranked fighters across weight divisions.</p>
+                        <div class="badge-row">
+                            <span class="pill-small">FIGHT NIGHTS</span>
+                            <span class="pill-small">HD / 4K</span>
+                        </div>
+                    </div>
+
+                    <!-- 12. Boxing -->
+                    <div class="sports-card glass reveal">
+                        <div class="sport-icon" aria-hidden="true">🥊</div>
+                        <h3>Championship Boxing</h3>
+                        <p>Follow world championship boxing events, undisputed title fights, and blockbuster match-ups
+                            delivered in clear high-definition video feeds.</p>
+                        <div class="badge-row">
+                            <span class="pill-small">TITLE FIGHTS</span>
+                            <span class="pill-small">4K QUALITY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dedicated Sports Channel Lineup Section -->
+        <section id="channels" aria-labelledby="channels-heading">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <div class="pill">📡 Sports Network Lineup</div>
+                        <h2 id="channels-heading">Popular Sports Networks & Feeds</h2>
+                        <p>Stream live matchday action from popular domestic and international sports networks available
+                            through our platform. <em>Network feeds may vary based on location and active subscription
+                                tier.</em></p>
+                    </div>
+                </div>
+
+                <div class="channels-static-grid">
+                    <div class="sports-card glass reveal">
+                        <div class="channel-logo">
+                            <img src="assets/imgs/swiper-channels/premier-league.webp"
+                                alt="Premier League sports broadcast feed" width="58" height="58" loading="lazy">
+                        </div>
+                        <h3>Premier League TV</h3>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE</span>
+                            <span class="pill-small">4K 60FPS</span>
+                        </div>
+                    </div>
+
+                    <div class="sports-card glass reveal">
+                        <div class="channel-logo">
+                            <img src="assets/imgs/swiper-channels/champions-league.webp"
+                                alt="UEFA Champions League coverage feed" width="58" height="58" loading="lazy">
+                        </div>
+                        <h3>UEFA Champions League</h3>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE</span>
+                            <span class="pill-small">4K</span>
+                        </div>
+                    </div>
+
+                    <div class="sports-card glass reveal">
+                        <div class="channel-logo">
+                            <img src="assets/imgs/swiper-channels/laliga.webp" alt="LaLiga sports coverage network"
+                                width="58" height="58" loading="lazy">
+                        </div>
+                        <h3>LaLiga TV</h3>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE</span>
+                            <span class="pill-small">4K</span>
+                        </div>
+                    </div>
+
+                    <div class="sports-card glass reveal">
+                        <div class="channel-logo">
+                            <img src="assets/imgs/swiper-channels/bundesliga.webp" alt="Bundesliga German sports feed"
+                                width="58" height="58" loading="lazy">
+                        </div>
+                        <h3>Bundesliga</h3>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE</span>
+                            <span class="pill-small">HD</span>
+                        </div>
+                    </div>
+
+                    <div class="sports-card glass reveal">
+                        <div class="channel-logo">
+                            <img src="assets/imgs/swiper-channels/bein-sports.webp"
+                                alt="beIN Sports international sports network" width="58" height="58" loading="lazy">
+                        </div>
+                        <h3>beIN Sports</h3>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE</span>
+                            <span class="pill-small">HD / 4K</span>
+                        </div>
+                    </div>
+
+                    <div class="sports-card glass reveal">
+                        <div class="channel-logo">
+                            <img src="assets/imgs/swiper-channels/espn.webp" alt="ESPN American sports network feed"
+                                width="58" height="58" loading="lazy">
+                        </div>
+                        <h3>ESPN</h3>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE</span>
+                            <span class="pill-small">HD</span>
+                        </div>
+                    </div>
+
+                    <div class="sports-card glass reveal">
+                        <div class="channel-logo">
+                            <img src="assets/imgs/swiper-channels/fox.webp" alt="Fox Sports network feed" width="58"
+                                height="58" loading="lazy">
+                        </div>
+                        <h3>Fox Sports</h3>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE</span>
+                            <span class="pill-small">4K</span>
+                        </div>
+                    </div>
+
+                    <div class="sports-card glass reveal">
+                        <div class="channel-logo">
+                            <img src="assets/imgs/swiper-channels/canal-plus.webp"
+                                alt="Canal+ Sport French sports coverage" width="58" height="58" loading="lazy">
+                        </div>
+                        <h3>Canal+ Sport</h3>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE</span>
+                            <span class="pill-small">HD</span>
+                        </div>
+                    </div>
+
+                    <div class="sports-card glass reveal">
+                        <div class="channel-logo">
+                            <img src="assets/imgs/swiper-channels/rmc-sport.webp" alt="RMC Sport European sports feed"
+                                width="58" height="58" loading="lazy">
+                        </div>
+                        <h3>RMC Sport</h3>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE</span>
+                            <span class="pill-small">HD</span>
+                        </div>
+                    </div>
+
+                    <div class="sports-card glass reveal">
+                        <div class="channel-logo">
+                            <img src="assets/imgs/swiper-channels/ziggo-sport.webp"
+                                alt="Ziggo Sport European sports network" width="58" height="58" loading="lazy">
+                        </div>
+                        <h3>Ziggo Sport</h3>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE</span>
+                            <span class="pill-small">HD</span>
+                        </div>
+                    </div>
+
+                    <div class="sports-card glass reveal">
+                        <div class="channel-logo">
+                            <img src="assets/imgs/swiper-channels/fubo-tv.webp" alt="Fubo Sports network stream"
+                                width="58" height="58" loading="lazy">
+                        </div>
+                        <h3>Fubo Sports</h3>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE</span>
+                            <span class="pill-small">4K</span>
+                        </div>
+                    </div>
+
+                    <div class="sports-card glass reveal">
+                        <div class="channel-logo">
+                            <img src="assets/imgs/swiper-channels/jupiler-pro-league.webp"
+                                alt="Jupiler Pro League Belgian sports feed" width="58" height="58" loading="lazy">
+                        </div>
+                        <h3>Jupiler League</h3>
+                        <div class="badge-row">
+                            <span class="pill-small">LIVE</span>
+                            <span class="pill-small">HD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO Content Guide Section -->
+        <section id="sports-guide" aria-labelledby="guide-heading">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <div class="pill">📖 Sports Streaming Guide</div>
+                        <h2 id="guide-heading">Live Football & Sports Streaming in the USA</h2>
+                        <p>A comprehensive overview of how viewers in the United States can stream live football, soccer
+                            tournaments, American sports, and combat events seamlessly.</p>
+                    </div>
+                </div>
+
+                <div class="story-grid">
+                    <article class="story-card glass reveal">
+                        <h3>Finding and Streaming Live Football Matches</h3>
+                        <p>Following live football streaming in the United States has evolved dramatically. Modern
+                            sports fans are no longer constrained by rigid cable packages or unpredictable regional
+                            blackouts. USAView offers a streamlined platform where enthusiasts can discover live
+                            football streams, domestic league fixtures, and international tournament broadcasts with
+                            minimal setup.</p>
+                        <p>Whether you are tuning in for Saturday morning English Premier League kickoffs, midweek UEFA
+                            Champions League drama, or Sunday afternoon LaLiga matches, having access to real-time
+                            schedules and stable feeds ensures you never miss a pivotal goal. Learn more <a
+                                href="about.html" style="color: var(--gold); text-decoration: underline;">about our
+                                streaming infrastructure</a> and network reliability.</p>
+
+                        <h3>Major Global Football & Soccer Competitions</h3>
+                        <p>The global football calendar offers year-round excitement. English Premier League streaming
+                            brings high-intensity matchups between clubs like Arsenal, Manchester City, and Liverpool.
+                            In European competition, the UEFA Champions League gathers the continent's top contenders
+                            for unforgettable knockout ties leading up to the final.</p>
+                        <p>Fans of technical Spanish soccer can follow LaLiga streaming for El Clásico and title battles
+                            featuring Real Madrid and Barcelona. Meanwhile, the Bundesliga delivers Germany's relentless
+                            attacking tempo, and Serie A showcases tactical Italian mastery. In North America, live
+                            soccer streaming USA continues to expand through Major League Soccer (MLS), featuring
+                            domestic derbies and world-renowned talent.</p>
+                    </article>
+
+                    <div class="story-highlights reveal">
+                        <div class="highlight-item glass">
+                            <div class="highlight-header">
+                                <span class="highlight-icon" aria-hidden="true">🏈</span>
+                                <h4>US Sports & Primetime Coverage</h4>
+                            </div>
+                            <p>Stream American sports including full-season NFL football, NBA basketball, MLB baseball
+                                pennant races, and NHL hockey. Catch regular-season games, division rivalries, and
+                                championship playoffs with multi-device support.</p>
+                        </div>
+
+                        <div class="highlight-item glass">
+                            <div class="highlight-header">
+                                <span class="highlight-icon" aria-hidden="true">🥊</span>
+                                <h4>UFC & Combat Sports Nights</h4>
+                            </div>
+                            <p>Follow major UFC fight cards, prelims, championship title defenses, and marquee boxing
+                                bouts. High-framerate video feeds keep every strike, takedown, and knockout clear and
+                                immersive.</p>
+                        </div>
+
+                        <div class="highlight-item glass">
+                            <div class="highlight-header">
+                                <span class="highlight-icon" aria-hidden="true">🎯</span>
+                                <h4>60FPS Framerates & Low Latency</h4>
+                            </div>
+                            <p>Fast-moving football matches and hockey action require high-framerate streaming. Our
+                                feeds prioritize 60FPS video in HD and 4K resolution, paired with dynamic routing to
+                                minimize buffering during peak weekend derbies.</p>
+                        </div>
+
+                        <div class="highlight-item glass">
+                            <div class="highlight-header">
+                                <span class="highlight-icon" aria-hidden="true">📋</span>
+                                <h4>7-Day EPG Match Schedules</h4>
+                            </div>
+                            <p>Plan your sports weekend with an integrated Electronic Program Guide (EPG). Check kickoff
+                                times, team lineups, and available broadcast feeds in advance across our <a
+                                    href="index.html#plans"
+                                    style="color: var(--gold); text-decoration: underline;">subscription plans</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Watch Sports on Any Device Section -->
+        <section id="devices" aria-labelledby="devices-heading">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <div class="pill">📱 Cross-Platform Streaming</div>
+                        <h2 id="devices-heading">Watch Live Sports on Any Device</h2>
+                        <p>Stream your favorite football leagues and live sports on big screens, mobile phones, tablets,
+                            and desktop computers.</p>
+                    </div>
+                </div>
+
+                <div class="device-grid">
+                    <div class="device-card glass reveal">
+                        <div class="device-icon" aria-hidden="true">📺</div>
+                        <h3>Smart TVs</h3>
+                        <p>Samsung Tizen, LG webOS, Sony, Android TV & Google TV</p>
+                    </div>
+                    <div class="device-card glass reveal">
+                        <div class="device-icon" aria-hidden="true">🔥</div>
+                        <h3>Amazon Fire TV</h3>
+                        <p>Firestick 4K, Fire TV Cube & Fire OS television sets</p>
+                    </div>
+                    <div class="device-card glass reveal">
+                        <div class="device-icon" aria-hidden="true">🍏</div>
+                        <h3>Apple Ecosystem</h3>
+                        <p>Apple TV 4K, iPhone, iPad & macOS browser streaming</p>
+                    </div>
+                    <div class="device-card glass reveal">
+                        <div class="device-icon" aria-hidden="true">🤖</div>
+                        <h3>Android Devices</h3>
+                        <p>Android smartphones, tablets, TV boxes & Nvidia Shield</p>
+                    </div>
+                    <div class="device-card glass reveal">
+                        <div class="device-icon" aria-hidden="true">💻</div>
+                        <h3>Laptops & Desktops</h3>
+                        <p>Web player for Chrome, Safari, Firefox & Microsoft Edge</p>
+                    </div>
+                    <div class="device-card glass reveal">
+                        <div class="device-icon" aria-hidden="true">📦</div>
+                        <h3>Streaming Receivers</h3>
+                        <p>Formuler, MAG devices & dedicated IPTV media boxes</p>
+                    </div>
+                    <div class="device-card glass reveal">
+                        <div class="device-icon" aria-hidden="true">🎮</div>
+                        <h3>Gaming Consoles</h3>
+                        <p>Xbox & PlayStation compatible browser streaming</p>
+                    </div>
+                    <div class="device-card glass reveal">
+                        <div class="device-icon" aria-hidden="true">📡</div>
+                        <h3>Casting & AirPlay</h3>
+                        <p>Chromecast, Apple AirPlay 2 & multi-room casting</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Sports Fans Choose USAView Section -->
+        <section id="why-sports" aria-labelledby="why-sports-heading">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <div class="pill">⚡ Performance & Reliability</div>
+                        <h2 id="why-sports-heading">Why Sports Fans Choose USAView</h2>
+                        <p>Engineered to deliver high-bitrate streaming stability during high-demand derby matches and
+                            championship games.</p>
+                    </div>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card glass reveal">
+                        <div class="icon" aria-hidden="true">⚡</div>
+                        <h3>Optimized Match Routing</h3>
+                        <p>Dynamic load balancing across North American edge servers helps reduce buffering during peak
+                            sports viewership.</p>
+                    </div>
+                    <div class="feature-card glass reveal">
+                        <div class="icon" aria-hidden="true">🎯</div>
+                        <h3>Ultra-Smooth 60FPS Video</h3>
+                        <p>Enjoy crisp ball tracking, rapid athletic motion, and clear stadium acoustics in Full HD and
+                            4K resolution.</p>
+                    </div>
+                    <div class="feature-card glass reveal">
+                        <div class="icon" aria-hidden="true">🥊</div>
+                        <h3>Extensive Combat Sports Coverage</h3>
+                        <p>Follow top-tier UFC fight nights, MMA events, and championship boxing showdowns delivered in
+                            high definition.</p>
+                    </div>
+                    <div class="feature-card glass reveal">
+                        <div class="icon" aria-hidden="true">📱</div>
+                        <h3>Multi-Device Streaming</h3>
+                        <p>Watch simultaneously across Smart TVs, Firestick, Apple TV, iPhone, Android, or laptop
+                            anywhere in the United States.</p>
+                    </div>
+                    <div class="feature-card glass reveal">
+                        <div class="icon" aria-hidden="true">🌍</div>
+                        <h3>Multi-Language Audio Feeds</h3>
+                        <p>Select between English, Spanish, French, and international audio commentary on designated
+                            global tournaments.</p>
+                    </div>
+                    <div class="feature-card glass reveal">
+                        <div class="icon" aria-hidden="true">📋</div>
+                        <h3>Real-Time 7-Day EPG Guide</h3>
+                        <p>Browse a comprehensive electronic program schedule with accurate kickoff times and channel
+                            listings so you never miss a match.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sports FAQ Section -->
+        <section id="sports-faq" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <div class="pill">❓ Frequently Asked Questions</div>
+                        <h2 id="faq-title">Sports Streaming FAQ</h2>
+                        <p>Common questions about live football streaming, sports availability, device setup, and video
+                            quality.</p>
+                    </div>
+                </div>
+
+                <div class="faq-list reveal">
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">What football leagues can I watch on
+                            USAView?<span>+</span></button>
+                        <div class="faq-answer">
+                            <p>USAView provides access to major football and soccer leagues including the English
+                                Premier League, UEFA Champions League, LaLiga, Bundesliga, Serie A, and Major League
+                                Soccer (MLS), alongside domestic cup competitions and international tournaments.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">Can I watch Premier League matches
+                            live?<span>+</span></button>
+                        <div class="faq-answer">
+                            <p>Yes, live Premier League fixtures are accessible on matchdays across weekend kickoffs and
+                                midweek rounds, subject to regional broadcast availability and service plans.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">Can I watch Champions League
+                            football?<span>+</span></button>
+                        <div class="faq-answer">
+                            <p>Yes, UEFA Champions League tournament matchdays—including group stage matches, knockout
+                                stages, and the final—are available through sports networks on the platform.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">Can I watch live soccer in the
+                            USA?<span>+</span></button>
+                        <div class="faq-answer">
+                            <p>Yes, viewers across the United States can stream live soccer matches from MLS, European
+                                leagues, South American competitions, and international fixtures.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">What sports are available besides
+                            football?<span>+</span></button>
+                        <div class="faq-answer">
+                            <p>In addition to live football and soccer, you can watch American sports including NFL
+                                football, NBA basketball, MLB baseball, and NHL hockey, alongside UFC fight nights,
+                                boxing championship events, and motorsports.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">Can I watch sports on Smart
+                            TV?<span>+</span></button>
+                        <div class="faq-answer">
+                            <p>Yes, the service is compatible with Smart TVs (Samsung, LG, Sony, Android TV), Amazon
+                                Fire TV Stick, Apple TV, iOS (iPhone/iPad), Android devices, and web browsers.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">Does the service support HD or
+                            4K?<span>+</span></button>
+                        <div class="faq-answer">
+                            <p>Yes, live sports streams are delivered in High Definition (HD) and 4K where supported by
+                                the underlying broadcast source, featuring high-framerate 60FPS video for smooth action.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button">Are sports schedules
+                            available?<span>+</span></button>
+                        <div class="faq-answer">
+                            <p>Yes, a real-time Electronic Program Guide (EPG) provides up-to-date kickoff schedules,
+                                fixture listings, and channel information so you never miss a match.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section id="sports-cta" aria-labelledby="cta-heading">
+            <div class="container">
+                <div class="cta-box glass reveal">
+                    <h2 id="cta-heading">Ready for Match Day?</h2>
+                    <p>Stream premier football leagues, major US sports, and live events across America on all your
+                        favorite connected devices.</p>
+                    <div class="cta-actions">
+                        <a class="btn btn-primary" href="index.html#plans">Start Free Trial</a>
+                        <a class="btn btn-secondary" href="index.html#plans">View Pricing Plans</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div class="logo footer-logo" style="margin-bottom: 10px;">
+                    <img src="logo.webp" alt="USAView logo" width="160" height="44" loading="lazy">
+                </div>
+                <p>Live TV, movies, series, and sports streaming for viewers across the United States.</p>
+            </div>
+            <div>
+                <h3 style="color: var(--white);">Quick Links</h3>
+                <p><a href="movies.html">Movies & TV Series</a></p>
+                <p><a href="sports.html">Sports & Football Hub</a></p>
+                <p><a href="index.html#plans">Pricing & Plans</a></p>
+                <p><a href="about.html">About Us</a></p>
+                <p><a href="index.html#faq">FAQ</a></p>
+            </div>
+            <div>
+                <h3 style="color: var(--white);">Contact</h3>
+                <p><a href="mailto:support@usaview.us" style="color: inherit;">support@usaview.us</a></p>
+                <p><a href="tel:+18005550148" style="color: inherit;">+1 (800) 555-0148</a></p>
+            </div>
+            <div>
+                <h3 style="color: var(--white);">Social</h3>
+                <div class="socials">
+                    <a href="#" aria-label="USAView on Facebook">f</a>
+                    <a href="#" aria-label="USAView on LinkedIn">in</a>
+                    <a href="#" aria-label="USAView on X (Twitter)">x</a>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 24px; font-size: .9rem;">© 2026 USAView.us. All rights reserved.
+            Streaming availability may vary by location and device.</div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
