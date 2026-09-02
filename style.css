@@ -1569,21 +1569,21 @@ footer {
     .pricing-grid,
     .reviews-grid,
     .footer-grid,
-    .device-grid,
     .steps-grid,
     .included-grid,
     .story-grid,
     .mission-grid,
     .tech-grid,
     .matches-grid,
-    .channels-static-grid,
     .hero-content {
         grid-template-columns: 1fr;
     }
 
-    /* Stat cards stay 2-up on phone instead of stacking to 1 column */
+    /* Stat cards and compact card grids stay 2-up on phone instead of stacking to 1 column */
     .stats-grid,
-    .stats-grid-4 {
+    .stats-grid-4,
+    .device-grid,
+    .channels-static-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 12px;
     }
@@ -1598,6 +1598,65 @@ footer {
 
     .stat-label {
         font-size: .78rem;
+    }
+
+    .sports-card {
+        padding: 16px 12px;
+        min-height: auto;
+        border-radius: 18px;
+    }
+
+    .sports-card h3 {
+        font-size: 0.98rem;
+        margin-bottom: 6px;
+    }
+
+    .sports-card p {
+        font-size: 0.8rem;
+        line-height: 1.45;
+    }
+
+    .sport-icon,
+    .channel-logo {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        margin-bottom: 12px;
+    }
+
+    .sport-icon {
+        font-size: 1.4rem;
+    }
+
+    .badge-row {
+        gap: 6px;
+        padding-top: 10px;
+    }
+
+    .pill-small {
+        padding: 4px 8px;
+        font-size: 0.65rem;
+    }
+
+    .device-card {
+        padding: 16px 10px;
+        border-radius: 18px;
+    }
+
+    .device-card .device-icon {
+        font-size: 1.6rem;
+        margin-bottom: 6px;
+    }
+
+    .device-card h3 {
+        font-size: 0.92rem;
+        margin: 0 0 4px;
+    }
+
+    .device-card p {
+        font-size: 0.78rem;
+        line-height: 1.35;
+        margin: 0;
     }
 
     .hero {
@@ -1665,6 +1724,7 @@ footer {
     margin: 6px 0 0;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }

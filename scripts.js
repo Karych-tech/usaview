@@ -73,13 +73,17 @@
 
         if (typeof Swiper !== 'undefined' && document.querySelector('.sports-swiper')) {
             const sportsSwiper = new Swiper('.sports-swiper', {
-                slidesPerView: 1,
-                spaceBetween: 18,
+                slidesPerView: 2,
+                spaceBetween: 12,
                 loop: true,
                 autoplay: { delay: 2800, disableOnInteraction: false },
                 navigation: { nextEl: '.sports-swiper .swiper-button-next', prevEl: '.sports-swiper .swiper-button-prev' },
                 pagination: { el: '.sports-swiper .swiper-pagination', clickable: true },
-                breakpoints: { 680: { slidesPerView: 2 }, 980: { slidesPerView: 4 } }
+                breakpoints: {
+                    0: { slidesPerView: 2, spaceBetween: 12 },
+                    680: { slidesPerView: 2, spaceBetween: 18 },
+                    980: { slidesPerView: 4, spaceBetween: 18 }
+                }
             });
         }
 
