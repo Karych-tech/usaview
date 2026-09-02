@@ -252,7 +252,7 @@ nav {
 
 }
 
-/* Desktop navigation links. Mobile dropdown is handled in responsive rules below. */
+/* Desktop navigation links. Collapsible dropdown is handled in responsive rules below. */
 .nav-links {
     display: flex;
     gap: 28px;
@@ -290,7 +290,6 @@ nav {
 }
 
 .hero {
-   
     display: grid;
     align-items: center;
     position: relative;
@@ -1447,57 +1446,26 @@ footer {
     transform: translateY(0);
 }
 
+/*
+  ============================================================
+  RESPONSIVE BREAKPOINTS
+  ------------------------------------------------------------
+  980px  -> "tablet range" (681px - 980px): nav collapses into
+            a hamburger menu here too (previously only kicked in
+            at 680px, which left a broken hybrid layout when a
+            phone's browser reports a ~980px CSS viewport, e.g.
+            Chrome's "Desktop site" toggle). Multi-column grids
+            drop to 2 columns, but hero-content stays side-by-side
+            (1fr 1fr) instead of stacking — stacking is reserved
+            for true phone widths below.
+  680px  -> phone range: hero-content stacks to 1 column, hero
+            padding/heights shrink further, nav dropdown styling
+            is inherited from the 980px block above.
+  ============================================================
+*/
+
 @media (max-width: 980px) {
 
-    nav {
-        flex-wrap: wrap;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 18px;
-    }
-
-    .btn-header {
-        display: none;
-    }
-
-    .hero-content,
-    .features-grid,
-    .pricing-grid,
-    .reviews-grid,
-    .footer-grid,
-    .story-grid,
-    .mission-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .stats-grid-4,
-    .tech-grid,
-    .matches-grid,
-    .channels-static-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .steps-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .included-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .device-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .hero-content {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 680px) {
     nav {
         flex-wrap: wrap;
     }
@@ -1553,6 +1521,50 @@ footer {
         display: none;
     }
 
+    /* Softer, tablet-appropriate hero sizing instead of jumping
+       straight from full desktop values to the phone values below. */
+    .hero {
+        padding: 55px 0;
+    }
+
+    .hero-card {
+        min-height: 400px;
+    }
+
+    /* NOTE: .hero-content is intentionally left at 1.1fr .9fr (its
+       base rule) through this range, so text and card sit side by
+       side like a tablet. It only stacks to 1 column at 680px. */
+    .features-grid,
+    .pricing-grid,
+    .reviews-grid,
+    .footer-grid,
+    .story-grid,
+    .mission-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stats-grid-4,
+    .tech-grid,
+    .matches-grid,
+    .channels-static-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .included-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .device-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 680px) {
+
     .stats-grid,
     .features-grid,
     .pricing-grid,
@@ -1566,7 +1578,8 @@ footer {
     .stats-grid-4,
     .tech-grid,
     .matches-grid,
-    .channels-static-grid {
+    .channels-static-grid,
+    .hero-content {
         grid-template-columns: 1fr;
     }
 
