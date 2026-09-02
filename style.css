@@ -290,7 +290,7 @@ nav {
 }
 
 .hero {
-    min-height: 100vh;
+   
     display: grid;
     align-items: center;
     position: relative;
