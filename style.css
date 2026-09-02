@@ -602,12 +602,10 @@ section {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    border-color: rgba(214, 40, 40, 0.7);
+     box-shadow: 0 0 22px rgba(214, 40, 40, 0.18);
 }
 
-.sports-card:hover {
-    border-color: rgba(214, 40, 40, 0.7);
-    box-shadow: 0 0 22px rgba(214, 40, 40, 0.18);
-}
 
 .sports-card h3 {
     margin: 0 0 8px;
