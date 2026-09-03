@@ -243,22 +243,25 @@ nav {
     width: auto;
     object-fit: contain;
     transform: scale(1.5);
-     opacity: 0.98;
+    opacity: 0.98;
     transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
 .logo:hover img {
     transform: scale(1.6);
-     opacity: 0.99;
+    opacity: 0.99;
 
 }
 
 /* Desktop navigation links. Collapsible dropdown is handled in responsive rules below. */
 .btn-header {
-    order: 3; /* trial button stays last on desktop (as before), after nav-links */
+    order: 3;
+    /* trial button stays last on desktop (as before), after nav-links */
 }
+
 .nav-links {
-    order: 2; /* keep links between logo and trial button on desktop,
+    order: 2;
+    /* keep links between logo and trial button on desktop,
                  since the button now sits after them in the HTML source */
     display: flex;
     gap: 28px;
@@ -300,7 +303,7 @@ nav {
     align-items: center;
     position: relative;
     padding: 70px 0 60px;
-    background: linear-gradient(130deg, rgba(4, 7, 14, 0.95), rgba(10, 35, 66, 0.55)), url('assets/imgs/logos/flag.jpeg') bottom/cover;
+    background: linear-gradient(130deg, rgba(4, 7, 14, 0.95), rgba(10, 35, 66, 0.55)), url('assets/imgs/logos/flag.webp') bottom/cover;
 }
 
 .hero::after {
@@ -502,10 +505,10 @@ section {
 .swiper-slide {
     height: auto;
     display: flex;
-    padding:12px;
+    padding: 12px;
 }
 
-.swiper-slide > * {
+.swiper-slide>* {
     width: 100%;
 }
 
@@ -609,7 +612,7 @@ section {
     justify-content: space-between;
     height: 100%;
     border-color: rgba(214, 40, 40, 0.7);
-     box-shadow: 0 0 22px rgba(214, 40, 40, 0.18);
+    box-shadow: 0 0 22px rgba(214, 40, 40, 0.18);
 }
 
 
@@ -770,8 +773,24 @@ section {
 }
 
 .device-card .device-icon {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.device-card .device-icon img {
+    width: clamp(44px, 8vw, 64px);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    border-radius: 12px;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
+    transition: transform 0.25s ease;
+}
+
+.device-card:hover .device-icon img {
+    transform: scale(1.08);
 }
 
 /* About Page & Layout Grid Helpers */
@@ -1113,8 +1132,15 @@ section {
 }
 
 @keyframes pulseLive {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.75; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.75;
+    }
 }
 
 .live-pulse-dot {
@@ -1538,10 +1564,12 @@ footer {
     }
 
     .nav-toggle {
-        order: 2; /* hamburger sits between logo and trial button on mobile */
+        order: 2;
+        /* hamburger sits between logo and trial button on mobile */
         margin-left: auto;
         margin-right: auto;
     }
+
     .btn-header {
         order: 3;
         margin-left: 0;
@@ -1550,9 +1578,11 @@ footer {
         font-size: 0.85rem;
         white-space: nowrap;
     }
+
     .logo {
         order: 1;
     }
+
     .nav-links {
         order: 4;
     }
@@ -1680,7 +1710,12 @@ footer {
     }
 
     .device-card .device-icon {
-        font-size: 1.6rem;
+        margin-bottom: 8px;
+    }
+
+    .device-card .device-icon img {
+        width: 40px;
+        border-radius: 10px;
         margin-bottom: 6px;
     }
 
