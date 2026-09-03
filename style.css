@@ -300,7 +300,7 @@ nav {
     align-items: center;
     position: relative;
     padding: 70px 0 60px;
-    background: linear-gradient(130deg, rgba(4, 7, 14, 0.95), rgba(10, 35, 66, 0.55)), url('flag.jpeg') bottom/cover;
+    background: linear-gradient(130deg, rgba(4, 7, 14, 0.95), rgba(10, 35, 66, 0.55)), url('assets/imgs/logos/flag.jpeg') bottom/cover;
 }
 
 .hero::after {
