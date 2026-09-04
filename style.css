@@ -870,6 +870,92 @@ section {
     line-height: 1.55;
 }
 
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.contact-form-card {
+    padding: 28px;
+    border-radius: 24px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 16px;
+}
+
+.form-field {
+    display: grid;
+    gap: 7px;
+}
+
+.form-field label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #d7e1f3;
+    letter-spacing: 0.02em;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    padding: 13px 16px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    color: var(--white);
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    backdrop-filter: blur(16px);
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.form-field textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-field select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23FFD166' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    cursor: pointer;
+}
+
+.form-field option {
+    background: #0B0F19;
+    color: var(--white);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: rgba(139, 158, 189, 0.7);
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-color: rgba(255, 209, 102, 0.6);
+    box-shadow: 0 0 24px rgba(255, 209, 102, 0.22);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.contact-info {
+    display: grid;
+    gap: 16px;
+}
+
+.contact-form .btn {
+    width: 100%;
+}
+
 .mission-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1605,7 +1691,8 @@ footer {
     .reviews-grid,
     .footer-grid,
     .story-grid,
-    .mission-grid {
+    .mission-grid,
+    .contact-grid {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -1641,6 +1728,7 @@ footer {
     .mission-grid,
     .tech-grid,
     .matches-grid,
+    .contact-grid,
     .hero-content {
         grid-template-columns: 1fr;
     }

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+  Contact Us page for USAView.us.
+  - Lets visitors get in touch with the support team by email, phone, or the contact form.
+  - Uses the same styling from style.css and interactive features from scripts.js.
+-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Contact USAView.us - reach our customer support team by email or phone, ask about plans, device setup, and streaming help across the United States." />
+    <title>Contact Us | USAView.us - We're Here to Help</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+
+                <a class="logo" href="index.html">
+                    <img src="assets/imgs/logos/logo.webp" alt="USAView">
+                </a>
+
+                <a class="btn btn-primary btn-header" href="index.html#plans">
+                    Free Trial
+                </a>
+
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"
+                    aria-controls="navLinks">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <div class="nav-links" id="navLinks">
+                    <a href="movies.html">Movies</a>
+                    <a href="sports.html">Sports</a>
+                    <a href="index.html#plans">Plans</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html" class="active" aria-current="page">Contact Us</a>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+
+            <div class="container hero-content">
+
+                <div class="reveal">
+
+                    <div class="pill">
+                        💬 We're Here to Help
+                    </div>
+
+                    <h1 id="hero-title">
+                        Contact USAView
+                    </h1>
+
+                    <p>
+                        Questions about plans, supported devices, or getting
+                        started? Our support team is ready to help viewers
+                        across the United States.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a class="btn btn-primary" href="mailto:support@usaview.us">
+                            Email Support
+                        </a>
+
+                        <a class="btn btn-secondary" href="tel:+18005550148">
+                            Call +1 (800) 555-0148
+                        </a>
+
+                    </div>
+
+
+                    <div class="stats-grid-4">
+
+                        <div class="stat-card">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">
+                                Support Availability
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-number">4K</div>
+                            <div class="stat-label">
+                                Streaming Quality
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-number">1000s</div>
+                            <div class="stat-label">
+                                Of Supported Devices
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-number">USA</div>
+                            <div class="stat-label">
+                                Nationwide Viewers
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="reveal">
+
+                    <div class="hero-card glass">
+
+                        <div class="floating-orb one"></div>
+                        <div class="floating-orb two"></div>
+
+                        <div class="pill">
+                            Quick Help
+                        </div>
+
+                        <h3>
+                            The Fastest Ways to Reach Us
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                Email us any time at support@usaview.us
+                            </li>
+
+                            <li>
+                                Call our support line at +1 (800) 555-0148
+                            </li>
+
+                            <li>
+                                Visit the FAQ for instant answers to common questions
+                            </li>
+
+                            <li>
+                                Check the Setup Guide for device help
+                            </li>
+
+                        </ul>
+
+                        <div class="hero-logo">
+
+                            <img src="assets/imgs/logos/logo.webp" alt="USAView" width="220" height="60">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Contact Form & Info Section -->
+        <section id="contact" aria-labelledby="contact-heading">
+
+            <div class="container">
+
+                <div class="section-head reveal">
+
+                    <div>
+
+                        <h2 id="contact-heading">
+                            Send Us a Message
+                        </h2>
+
+                        <p>
+                            Fill out the form below and we'll get back to you
+                            as soon as we can.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+                    <div class="contact-form-card glass reveal">
+
+                        <form class="contact-form" method="post" action="mailto:support@usaview.us"
+                            enctype="text/plain">
+
+                            <div class="form-field">
+                                <label for="cf-name">
+                                    Your Name
+                                </label>
+                                <input type="text" id="cf-name" name="name" placeholder="John Smith" autocomplete="name"
+                                    required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="cf-email">
+                                    Your Email
+                                </label>
+                                <input type="email" id="cf-email" name="email" placeholder="you@example.com"
+                                    autocomplete="email" required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="cf-topic">
+                                    Topic
+                                </label>
+                                <select id="cf-topic" name="topic">
+                                    <option value="General Question">General Question</option>
+                                    <option value="Billing & Plans">Billing & Plans</option>
+                                    <option value="Device Setup">Device Setup</option>
+                                    <option value="Technical Support">Technical Support</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="cf-message">
+                                    Message
+                                </label>
+                                <textarea id="cf-message" name="message" rows="5" placeholder="How can we help you?"
+                                    required></textarea>
+                            </div>
+
+                            <button class="btn btn-primary" type="submit">
+                                Send Message
+                            </button>
+
+                        </form>
+
+                    </div>
+
+
+                    <div class="contact-info reveal">
+
+                        <div class="highlight-item glass">
+
+                            <div class="highlight-header">
+
+                                <span class="highlight-icon">
+                                    📧
+                                </span>
+
+                                <h4>
+                                    Email
+                                </h4>
+
+                            </div>
+
+                            <p>
+                                <a href="mailto:support@usaview.us" style="color: inherit;">
+                                    support@usaview.us
+                                </a>
+                            </p>
+
+                            <p>
+                                We reply to most messages within a few hours.
+                            </p>
+
+                        </div>
+
+
+                        <div class="highlight-item glass">
+
+                            <div class="highlight-header">
+
+                                <span class="highlight-icon">
+                                    📞
+                                </span>
+
+                                <h4>
+                                    Phone
+                                </h4>
+
+                            </div>
+
+                            <p>
+                                <a href="tel:+18005550148" style="color: inherit;">
+                                    +1 (800) 555-0148
+                                </a>
+                            </p>
+
+                            <p>
+                                Monday – Sunday, 8am – 10pm ET.
+                            </p>
+
+                        </div>
+
+
+                        <div class="highlight-item glass">
+
+                            <div class="highlight-header">
+
+                                <span class="highlight-icon">
+                                    ❓
+                                </span>
+
+                                <h4>
+                                    Common Questions
+                                </h4>
+
+                            </div>
+
+                            <p>
+                                Many answers are available instantly in our
+                                <a href="index.html#faq" style="color: inherit; text-decoration: underline;">
+                                    FAQ
+                                </a>.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Support Topics Section -->
+        <section id="support-topics" aria-labelledby="support-topics-heading">
+
+            <div class="container">
+
+                <div class="section-head reveal">
+
+                    <div>
+
+                        <h2 id="support-topics-heading">
+                            How We Can Help
+                        </h2>
+
+                        <p>
+                            Common topics our support team assists with every day.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mission-grid">
+
+                    <div class="mission-card glass reveal">
+
+                        <div class="icon">
+                            💳
+                        </div>
+
+                        <h3>
+                            Billing & Plans
+                        </h3>
+
+                        <p>
+                            Questions about subscriptions, renewals, upgrades,
+                            or managing your plan.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mission-card glass reveal">
+
+                        <div class="icon">
+                            📺
+                        </div>
+
+                        <h3>
+                            Device Setup
+                        </h3>
+
+                        <p>
+                            Help installing or connecting USAView on supported
+                            Smart TVs, phones, and streaming devices.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mission-card glass reveal">
+
+                        <div class="icon">
+                            🎬
+                        </div>
+
+                        <h3>
+                            Streaming Issues
+                        </h3>
+
+                        <p>
+                            Assistance with playback, buffering, picture quality,
+                            or account access.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CTA Section -->
+        <section id="contact-cta">
+
+            <div class="container">
+
+                <div class="cta-box glass reveal">
+
+                    <h2>
+                        Not Ready to Contact Us Yet?
+                    </h2>
+
+                    <p>
+                        Explore our plans and discover live TV, sports, movies,
+                        and TV series available through the platform.
+                    </p>
+
+                    <div class="cta-actions">
+
+                        <a class="btn btn-primary" href="index.html#plans">
+                            Choose a Plan
+                        </a>
+
+                        <a class="btn btn-secondary" href="index.html#faq">
+                            Read FAQ
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <div class="logo footer-logo" style="margin-bottom: 10px;">
+
+                    <img src="assets/imgs/logos/logo.webp" alt="USAView" width="220" height="60">
+
+                </div>
+
+                <p>
+                    Live TV, movies, series, and sports streaming for viewers
+                    across the United States.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 style="color: var(--white);">
+                    Quick Links
+                </h3>
+
+                <p>
+                    <a href="movies.html">
+                        Movies & TV Series
+                    </a>
+                </p>
+
+                <p>
+                    <a href="sports.html">
+                        Sports & Football Hub
+                    </a>
+                </p>
+
+                <p>
+                    <a href="index.html#plans">
+                        Pricing
+                    </a>
+                </p>
+
+                <p>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </p>
+
+                <p>
+                    <a href="contact.html">
+                        Contact Us
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 style="color: var(--white);">
+                    Contact
+                </h3>
+
+                <p>
+                    <a href="mailto:support@usaview.us" style="color: inherit;">
+                        support@usaview.us
+                    </a>
+                </p>
+
+                <p>
+                    <a href="tel:+18005550148" style="color: inherit;">
+                        +1 (800) 555-0148
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 style="color: var(--white);">
+                    Social
+                </h3>
+
+                <div class="socials">
+
+                    <a href="#" aria-label="Facebook">
+                        f
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        in
+                    </a>
+
+                    <a href="#" aria-label="X">
+                        x
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="container" style="margin-top: 24px; font-size: .9rem;">
+
+            © 2026 USAView.us. All rights reserved.
+            Streaming availability may vary by location and device.
+
+        </div>
+
+    </footer>
+
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
