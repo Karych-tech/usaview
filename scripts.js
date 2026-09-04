@@ -71,6 +71,36 @@
             });
         }
 
+        document.querySelectorAll('.catalog-swiper').forEach((slider) => {
+            const isRightToLeft = slider.dataset.direction === 'right-to-left';
+
+            new Swiper(slider, {
+                slidesPerView: 1,
+                spaceBetween: 12,
+                loop: true,
+                speed: 700,
+                autoplay: {
+                    delay: 3200,
+                    disableOnInteraction: false,
+                    reverseDirection: isRightToLeft
+                },
+                navigation: {
+                    nextEl: slider.querySelector('.swiper-button-next'),
+                    prevEl: slider.querySelector('.swiper-button-prev')
+                },
+                pagination: {
+                    el: slider.querySelector('.swiper-pagination'),
+                    clickable: true
+                },
+                breakpoints: {
+                    680: { slidesPerView: 2, spaceBetween: 16 },
+                    980: { slidesPerView: 3, spaceBetween: 18 }
+                },
+                observer: true,
+                observeParents: true
+            });
+        });
+
         if (typeof Swiper !== 'undefined' && document.querySelector('.sports-swiper')) {
             const sportsSwiper = new Swiper('.sports-swiper', {
                 slidesPerView: 2,

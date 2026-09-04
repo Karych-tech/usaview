@@ -33,6 +33,7 @@
     <meta name="twitter:image" content="https://usaview.us/logo.webp" />
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
@@ -217,7 +218,9 @@
                 <a class="logo" href="index.html" aria-label="USAView Home">
                     <img src="assets/imgs/logos/logo.webp" alt="USAView logo" width="160" height="44">
                 </a>
-                <a class="btn btn-primary btn-header" href="https://wa.me/212613378841?text=hello%20usa%20view%20i%20want%20free%20trial%2024%20hours" target="_blank" rel="noopener">Free Trial</a>
+                <a class="btn btn-primary btn-header"
+                    href="https://wa.me/212613378841?text=hello%20usa%20view%20i%20want%20free%20trial%2024%20hours"
+                    target="_blank" rel="noopener">Free Trial</a>
                 <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"
                     aria-controls="navLinks">
                     <span class="bar"></span>
@@ -313,82 +316,183 @@
                     </div>
                 </div>
 
-                <div class="movies-catalog-grid">
-                    <!-- 1. Oppenheimer -->
-                    <article class="movie-card glass reveal">
-                        <div class="thumb">
-                            <img src="assets/imgs/slider-movies/oppenheimer.webp" alt="Oppenheimer movie poster"
-                                width="300" height="450" loading="lazy">
-                        </div>
-                        <div class="content">
-                            <span class="badge">4K</span>
-                            <h3>Oppenheimer</h3>
-                            <div class="meta-row">
-                                <span class="genre-text">Drama • History</span>
-                                <span class="year-text">2023</span>
-                            </div>
-                            <p class="desc">A gripping historical drama chronicling J. Robert Oppenheimer and the
-                                scientific race behind the Manhattan Project.</p>
-                        </div>
-                        <div class="play" aria-hidden="true">▶</div>
-                    </article>
+                <div class="swiper catalog-swiper reveal" data-direction="right-to-left">
+                    <div class="swiper-wrapper">
 
-                    <!-- 2. Back in Action -->
-                    <article class="movie-card glass reveal">
-                        <div class="thumb">
-                            <img src="assets/imgs/slider-movies/back-in-action.webp" alt="Back in Action movie poster"
-                                width="300" height="450" loading="lazy">
+                        <!-- 1. Oppenheimer -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/oppenheimer.webp" alt="Oppenheimer movie poster"
+                                        width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">4K</span>
+                                    <h3>Oppenheimer</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Drama • History</span>
+                                        <span class="year-text">2023</span>
+                                    </div>
+                                    <p class="desc">A gripping historical drama chronicling J. Robert Oppenheimer and
+                                        the
+                                        scientific race behind the Manhattan Project.</p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
                         </div>
-                        <div class="content">
-                            <span class="badge">4K</span>
-                            <h3>Back in Action</h3>
-                            <div class="meta-row">
-                                <span class="genre-text">Action • Comedy</span>
-                                <span class="year-text">2025</span>
-                            </div>
-                            <p class="desc">Former elite CIA operatives find their secret suburban lives upended when
-                                their hidden pasts are abruptly uncovered.</p>
-                        </div>
-                        <div class="play" aria-hidden="true">▶</div>
-                    </article>
 
-                    <!-- 3. Deep Cover -->
-                    <article class="movie-card glass reveal">
-                        <div class="thumb">
-                            <img src="assets/imgs/slider-movies/deep-cover.webp" alt="Deep Cover movie poster"
-                                width="300" height="450" loading="lazy">
+                        <!-- 2. The Beekeeper -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/beekeeper.webp" alt="The Beekeeper movie poster"
+                                        width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">4K</span>
+                                    <h3>The Beekeeper</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Action • Thriller</span>
+                                        <span class="year-text">2024</span>
+                                    </div>
+                                    <p class="desc">A retired operative unleashes justice after a door-to-door scam hits
+                                        close to home.</p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
                         </div>
-                        <div class="content">
-                            <span class="badge">4K</span>
-                            <h3>Deep Cover</h3>
-                            <div class="meta-row">
-                                <span class="genre-text">Crime • Thriller</span>
-                                <span class="year-text">2024</span>
-                            </div>
-                            <p class="desc">An undercover law officer navigates a dangerous underworld syndicate where
-                                loyalties blur and risks escalate.</p>
-                        </div>
-                        <div class="play" aria-hidden="true">▶</div>
-                    </article>
 
-                    <!-- 4. Rango -->
-                    <article class="movie-card glass reveal">
-                        <div class="thumb">
-                            <img src="assets/imgs/slider-movies/rango-animation.webp" alt="Rango animated movie poster"
-                                width="300" height="450" loading="lazy">
+                        <!-- 3. Avatar -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/Avatar.webp" alt="Avatar movie poster"
+                                        width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">4K</span>
+                                    <h3>Avatar</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Sci-Fi • Adventure</span>
+                                        <span class="year-text">2009</span>
+                                    </div>
+                                    <p class="desc">A wounded marine is drawn into the alien world of Pandora and its
+                                        people.</p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
                         </div>
-                        <div class="content">
-                            <span class="badge">HD</span>
-                            <h3>Rango</h3>
-                            <div class="meta-row">
-                                <span class="genre-text">Animation • Comedy</span>
-                                <span class="year-text">2011</span>
-                            </div>
-                            <p class="desc">An eccentric chameleon accidentally finds himself appointed sheriff of the
-                                lawless desert town of Dirt.</p>
+
+                        <!-- 4. Deep Cover -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/deep-cover.webp" alt="Deep Cover movie poster"
+                                        width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">4K</span>
+                                    <h3>Deep Cover</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Crime • Thriller</span>
+                                        <span class="year-text">2024</span>
+                                    </div>
+                                    <p class="desc">An undercover law officer navigates a dangerous underworld syndicate
+                                        where loyalties blur and risks escalate.</p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
                         </div>
-                        <div class="play" aria-hidden="true">▶</div>
-                    </article>
+
+                        <!-- 5. Rango -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/rango-animation.webp"
+                                        alt="Rango animated movie poster" width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">HD</span>
+                                    <h3>Rango</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Animation • Comedy</span>
+                                        <span class="year-text">2011</span>
+                                    </div>
+                                    <p class="desc">An eccentric chameleon accidentally finds himself appointed sheriff
+                                        of
+                                        the lawless desert town of Dirt.</p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
+                        </div>
+
+                        <!-- 6. Nobody -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/nobody.webp" alt="Nobody movie poster"
+                                        width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">HD</span>
+                                    <h3>Nobody</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Action • Crime</span>
+                                        <span class="year-text">2021</span>
+                                    </div>
+                                    <p class="desc">A quiet family man with a hidden past fights back when burglars
+                                        break into his home.</p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
+                        </div>
+
+                        <!-- 7. Luca -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/luca.webp" alt="Luca animated movie poster"
+                                        width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">HD</span>
+                                    <h3>Luca</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Animation • Adventure</span>
+                                        <span class="year-text">2021</span>
+                                    </div>
+                                    <p class="desc">A sea monster boy discovers the wonders of the human world.
+                                    </p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
+                        </div>
+
+                        <!-- 8. Elemental -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/elemental.webp"
+                                        alt="Elemental animated movie poster" width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">HD</span>
+                                    <h3>Elemental</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Animation • Family</span>
+                                        <span class="year-text">2023</span>
+                                    </div>
+                                    <p class="desc">Fire and water meet and discover how much they have in common.
+                                    </p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -405,82 +509,183 @@
                     </div>
                 </div>
 
-                <div class="movies-catalog-grid">
-                    <!-- 5. Love Me, Love Me -->
-                    <article class="movie-card glass reveal">
-                        <div class="thumb">
-                            <img src="assets/imgs/slider-movies/love-me-love-me.webp" alt="Love Me Love Me movie poster"
-                                width="300" height="450" loading="lazy">
-                        </div>
-                        <div class="content">
-                            <span class="badge">HD</span>
-                            <h3>Love Me, Love Me</h3>
-                            <div class="meta-row">
-                                <span class="genre-text">Romance • Drama</span>
-                                <span class="year-text">2024</span>
-                            </div>
-                            <p class="desc">An emotional exploration of human connection, heartfelt vulnerability, and
-                                second chances in modern romance.</p>
-                        </div>
-                        <div class="play" aria-hidden="true">▶</div>
-                    </article>
+                <div class="swiper catalog-swiper reveal" data-direction="left-to-right">
+                    <div class="swiper-wrapper">
 
-                    <!-- 6. Swapped -->
-                    <article class="movie-card glass reveal">
-                        <div class="thumb">
-                            <img src="assets/imgs/slider-movies/swapped-movie.webp" alt="Swapped movie poster"
-                                width="300" height="450" loading="lazy">
+                        <!-- 1. The Fall -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/fall.webp" alt="The Fall movie poster"
+                                        width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">4K</span>
+                                    <h3>The Fall</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Thriller • Adventure</span>
+                                        <span class="year-text">2022</span>
+                                    </div>
+                                    <p class="desc">Two thrill-seekers trapped atop a 2,000-foot radio tower must
+                                        survive against all odds.</p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
                         </div>
-                        <div class="content">
-                            <span class="badge">HD</span>
-                            <h3>Swapped</h3>
-                            <div class="meta-row">
-                                <span class="genre-text">Comedy • Family</span>
-                                <span class="year-text">2024</span>
-                            </div>
-                            <p class="desc">A hilarious comedy following two families whose unexpected identity trade
-                                creates heartwarming chaos.</p>
-                        </div>
-                        <div class="play" aria-hidden="true">▶</div>
-                    </article>
 
-                    <!-- 7. Peaky Blinders: The Immortal Man -->
-                    <article class="movie-card glass reveal">
-                        <div class="thumb">
-                            <img src="assets/imgs/slider-movies/peaky-blinders-immortal-man.webp"
-                                alt="Peaky Blinders Immortal Man movie poster" width="300" height="450" loading="lazy">
+                        <!-- 2. Moana -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/moana-movie.webp" alt="Moana movie poster"
+                                        width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">HD</span>
+                                    <h3>Moana</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Animation • Adventure</span>
+                                        <span class="year-text">2016</span>
+                                    </div>
+                                    <p class="desc">A spirited voyager sails across the ocean to save her island.
+                                    </p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
                         </div>
-                        <div class="content">
-                            <span class="badge">HD</span>
-                            <h3>Peaky Blinders: Immortal Man</h3>
-                            <div class="meta-row">
-                                <span class="genre-text">Crime • Drama</span>
-                                <span class="year-text">2025</span>
-                            </div>
-                            <p class="desc">The Shelby dynasty enters a consequential new chapter of ambition, family
-                                honor, and shifting power dynamics.</p>
-                        </div>
-                        <div class="play" aria-hidden="true">▶</div>
-                    </article>
 
-                    <!-- 8. The Witcher -->
-                    <article class="movie-card glass reveal">
-                        <div class="thumb">
-                            <img src="assets/imgs/slider-movies/the-witcher.webp"
-                                alt="The Witcher fantasy adventure poster" width="300" height="450" loading="lazy">
+                        <!-- 3. The Bad Guys -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/the-bad-guys.webp"
+                                        alt="The Bad Guys movie poster" width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">HD</span>
+                                    <h3>The Bad Guys</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Animation • Comedy</span>
+                                        <span class="year-text">2022</span>
+                                    </div>
+                                    <p class="desc">Notorious animal outlaws try to pull off their ultimate heist.
+                                    </p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
                         </div>
-                        <div class="content">
-                            <span class="badge">4K</span>
-                            <h3>The Witcher</h3>
-                            <div class="meta-row">
-                                <span class="genre-text">Fantasy • Adventure</span>
-                                <span class="year-text">2024</span>
-                            </div>
-                            <p class="desc">Monster hunters, sorceresses, and ancient prophecies intertwine across a
-                                dangerous and mystical continent.</p>
+
+                        <!-- 4. Peaky Blinders: Immortal Man -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/peaky-blinders-immortal-man.webp"
+                                        alt="Peaky Blinders Immortal Man movie poster" width="300" height="450"
+                                        loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">HD</span>
+                                    <h3>Peaky Blinders: Immortal Man</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Crime • Drama</span>
+                                        <span class="year-text">2025</span>
+                                    </div>
+                                    <p class="desc">The Shelby dynasty enters a consequential new chapter of ambition,
+                                        family honor, and shifting power dynamics.</p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
                         </div>
-                        <div class="play" aria-hidden="true">▶</div>
-                    </article>
+
+                        <!-- 5. The Witcher -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/the-witcher.webp"
+                                        alt="The Witcher fantasy adventure poster" width="300" height="450"
+                                        loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">4K</span>
+                                    <h3>The Witcher</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Fantasy • Adventure</span>
+                                        <span class="year-text">2024</span>
+                                    </div>
+                                    <p class="desc">Monster hunters, sorceresses, and ancient prophecies intertwine
+                                        across a dangerous and mystical continent.</p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
+                        </div>
+
+                        <!-- 6. Fallout -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/fallout.webp" alt="Fallout movie poster"
+                                        width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">4K</span>
+                                    <h3>Fallout</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Sci-Fi • Drama</span>
+                                        <span class="year-text">2024</span>
+                                    </div>
+                                    <p class="desc">Survivors emerge from vaults into a brutal post-apocalyptic
+                                        wasteland.</p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
+                        </div>
+
+                        <!-- 7. Crime 101 -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/crime101.webp" alt="Crime 101 movie poster"
+                                        width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">4K</span>
+                                    <h3>Crime 101</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Crime • Thriller</span>
+                                        <span class="year-text">2025</span>
+                                    </div>
+                                    <p class="desc">Detectives close in on a jewel thief who never breaks the rules.
+                                    </p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
+                        </div>
+
+                        <!-- 8. Moana Cartoon -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/moana-cartoon.webp" alt="Moana cartoon poster"
+                                        width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">HD</span>
+                                    <h3>Moana Cartoon</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Animation • Family</span>
+                                        <span class="year-text">2024</span>
+                                    </div>
+                                    <p class="desc">The island adventure returns in a new animated cartoon series.
+                                    </p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -497,82 +702,161 @@
                     </div>
                 </div>
 
-                <div class="movies-catalog-grid">
-                    <!-- 1. Peaky Blinders -->
-                    <article class="movie-card glass reveal">
-                        <div class="thumb">
-                            <img src="assets/imgs/slider-movies/peaky-blinders-immortal-man.webp"
-                                alt="Peaky Blinders TV series poster" width="300" height="450" loading="lazy">
-                        </div>
-                        <div class="content">
-                            <span class="badge">4K</span>
-                            <h3>Peaky Blinders</h3>
-                            <div class="meta-row">
-                                <span class="genre-text">Crime • Drama</span>
-                                <span class="year-text">6 Seasons</span>
-                            </div>
-                            <p class="desc">A notorious street gang rises through post-World War I Birmingham under the
-                                fiercely ambitious leadership of Tommy Shelby.</p>
-                        </div>
-                        <div class="play" aria-hidden="true">▶</div>
-                    </article>
+                <div class="swiper catalog-swiper reveal" data-direction="right-to-left">
+                    <div class="swiper-wrapper">
 
-                    <!-- 2. The Witcher -->
-                    <article class="movie-card glass reveal">
-                        <div class="thumb">
-                            <img src="assets/imgs/slider-movies/the-witcher.webp" alt="The Witcher TV series poster"
-                                width="300" height="450" loading="lazy">
+                        <!-- 1. Peaky Blinders -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/peaky-blinders.webp"
+                                        alt="Peaky Blinders TV series poster" width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">4K</span>
+                                    <h3>Peaky Blinders</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Crime • Drama</span>
+                                        <span class="year-text">6 Seasons</span>
+                                    </div>
+                                    <p class="desc">A notorious street gang rises through post-World War I Birmingham
+                                        under the fiercely ambitious leadership of Tommy Shelby.</p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
                         </div>
-                        <div class="content">
-                            <span class="badge">4K</span>
-                            <h3>The Witcher</h3>
-                            <div class="meta-row">
-                                <span class="genre-text">Fantasy • Action</span>
-                                <span class="year-text">3 Seasons</span>
-                            </div>
-                            <p class="desc">Geralt of Rivia, a mutated monster-hunter for hire, journeys through a
-                                perilous world where humans often prove more wicked than beasts.</p>
-                        </div>
-                        <div class="play" aria-hidden="true">▶</div>
-                    </article>
 
-                    <!-- 3. Deep Cover: Operations -->
-                    <article class="movie-card glass reveal">
-                        <div class="thumb">
-                            <img src="assets/imgs/slider-movies/deep-cover.webp"
-                                alt="Deep Cover television series poster" width="300" height="450" loading="lazy">
+                        <!-- 2. The Witcher -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/the-witcher.webp"
+                                        alt="The Witcher TV series poster" width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">4K</span>
+                                    <h3>The Witcher</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Fantasy • Action</span>
+                                        <span class="year-text">3 Seasons</span>
+                                    </div>
+                                    <p class="desc">Geralt of Rivia, a mutated monster-hunter for hire, journeys
+                                        through a perilous world where humans often prove more wicked than beasts.</p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
                         </div>
-                        <div class="content">
-                            <span class="badge">4K</span>
-                            <h3>Deep Cover: Operations</h3>
-                            <div class="meta-row">
-                                <span class="genre-text">Crime • Mystery</span>
-                                <span class="year-text">Season 1</span>
-                            </div>
-                            <p class="desc">A tactical investigative unit infiltrates deep-rooted international criminal
-                                networks across multiple interconnected cases.</p>
-                        </div>
-                        <div class="play" aria-hidden="true">▶</div>
-                    </article>
 
-                    <!-- 4. Back in Action: The Series -->
-                    <article class="movie-card glass reveal">
-                        <div class="thumb">
-                            <img src="assets/imgs/slider-movies/back-in-action.webp"
-                                alt="Back in Action TV series poster" width="300" height="450" loading="lazy">
+                        <!-- 3. Breaking Bad -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/breaking-bad.webp"
+                                        alt="Breaking Bad TV series poster" width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">4K</span>
+                                    <h3>Breaking Bad</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Crime • Drama</span>
+                                        <span class="year-text">5 Seasons</span>
+                                    </div>
+                                    <p class="desc">A chemistry teacher turned drug lord walks a dangerous line.
+                                    </p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
                         </div>
-                        <div class="content">
-                            <span class="badge">HD</span>
-                            <h3>Back in Action: The Series</h3>
-                            <div class="meta-row">
-                                <span class="genre-text">Action • Comedy</span>
-                                <span class="year-text">Season 1</span>
-                            </div>
-                            <p class="desc">Secret operatives attempt to balance quiet domestic family life with
-                                unexpected global covert missions.</p>
+
+                        <!-- 4. Deep Cover: Operations -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/deep-cover.webp"
+                                        alt="Deep Cover television series poster" width="300" height="450"
+                                        loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">4K</span>
+                                    <h3>Deep Cover: Operations</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Crime • Mystery</span>
+                                        <span class="year-text">Season 1</span>
+                                    </div>
+                                    <p class="desc">A tactical investigative unit infiltrates deep-rooted international
+                                        criminal networks across multiple interconnected cases.</p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
                         </div>
-                        <div class="play" aria-hidden="true">▶</div>
-                    </article>
+
+                        <!-- 5. Better Call Saul -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/better-call-saul.webp"
+                                        alt="Better Call Saul series poster" width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">HD</span>
+                                    <h3>Better Call Saul</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Crime • Drama</span>
+                                        <span class="year-text">6 Seasons</span>
+                                    </div>
+                                    <p class="desc">A small-time lawyer's path to becoming Saul Goodman begins.
+                                    </p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
+                        </div>
+
+                        <!-- 6. The Last of Us -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/the-last-of-us.webp"
+                                        alt="The Last of Us series poster" width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">4K</span>
+                                    <h3>The Last of Us</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Drama • Action</span>
+                                        <span class="year-text">2 Seasons</span>
+                                    </div>
+                                    <p class="desc">Joel and Ellie cross a decimated America clinging to hope.
+                                    </p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
+                        </div>
+
+                        <!-- 7. The 100 -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/the-100.webp" alt="The 100 series poster"
+                                        width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">HD</span>
+                                    <h3>The 100</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Sci-Fi • Drama</span>
+                                        <span class="year-text">7 Seasons</span>
+                                    </div>
+                                    <p class="desc">A hundred teens return to Earth long after it was abandoned.
+                                    </p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -589,82 +873,181 @@
                     </div>
                 </div>
 
-                <div class="movies-catalog-grid">
-                    <!-- 5. Love Me, Love Me: The Series -->
-                    <article class="movie-card glass reveal">
-                        <div class="thumb">
-                            <img src="assets/imgs/slider-movies/love-me-love-me.webp"
-                                alt="Love Me Love Me series poster" width="300" height="450" loading="lazy">
-                        </div>
-                        <div class="content">
-                            <span class="badge">HD</span>
-                            <h3>Love Me, Love Me</h3>
-                            <div class="meta-row">
-                                <span class="genre-text">Romance • Drama</span>
-                                <span class="year-text">Season 1</span>
-                            </div>
-                            <p class="desc">A modern romantic drama chronicling interconnected lives, personal
-                                ambitions, and emotional discoveries in the city.</p>
-                        </div>
-                        <div class="play" aria-hidden="true">▶</div>
-                    </article>
+                <div class="swiper catalog-swiper reveal" data-direction="left-to-right">
+                    <div class="swiper-wrapper">
 
-                    <!-- 6. Swapped -->
-                    <article class="movie-card glass reveal">
-                        <div class="thumb">
-                            <img src="assets/imgs/slider-movies/swapped-movie.webp"
-                                alt="Swapped television comedy poster" width="300" height="450" loading="lazy">
+                        <!-- 1. The Walking Dead -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/walking-dead.webp"
+                                        alt="The Walking Dead series poster" width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">HD</span>
+                                    <h3>The Walking Dead</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Horror • Drama</span>
+                                        <span class="year-text">11 Seasons</span>
+                                    </div>
+                                    <p class="desc">Survivors band together in a world overrun by walkers.
+                                    </p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
                         </div>
-                        <div class="content">
-                            <span class="badge">HD</span>
-                            <h3>Swapped: Family Chaos</h3>
-                            <div class="meta-row">
-                                <span class="genre-text">Comedy • Sitcom</span>
-                                <span class="year-text">Season 1</span>
-                            </div>
-                            <p class="desc">Two families with contrasting lifestyles navigate the comedic fallout of
-                                trading homes, routines, and responsibilities.</p>
-                        </div>
-                        <div class="play" aria-hidden="true">▶</div>
-                    </article>
 
-                    <!-- 7. Rango: Desert Chronicles -->
-                    <article class="movie-card glass reveal">
-                        <div class="thumb">
-                            <img src="assets/imgs/slider-movies/rango-animation.webp" alt="Rango animated series poster"
-                                width="300" height="450" loading="lazy">
+                        <!-- 2. Lost -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/lost.webp" alt="Lost series poster" width="300"
+                                        height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">HD</span>
+                                    <h3>Lost</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Mystery • Drama</span>
+                                        <span class="year-text">6 Seasons</span>
+                                    </div>
+                                    <p class="desc">Plane crash survivors uncover the island's deepest secrets.
+                                    </p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
                         </div>
-                        <div class="content">
-                            <span class="badge">HD</span>
-                            <h3>Rango: Desert Tales</h3>
-                            <div class="meta-row">
-                                <span class="genre-text">Animation • Adventure</span>
-                                <span class="year-text">Season 1</span>
-                            </div>
-                            <p class="desc">Charming animated western escapades through the eccentric Mojave frontier
-                                packed with witty humor and lively critters.</p>
-                        </div>
-                        <div class="play" aria-hidden="true">▶</div>
-                    </article>
 
-                    <!-- 8. Oppenheimer: Atomic Legacy -->
-                    <article class="movie-card glass reveal">
-                        <div class="thumb">
-                            <img src="assets/imgs/slider-movies/oppenheimer.webp" alt="Oppenheimer docuseries poster"
-                                width="300" height="450" loading="lazy">
+                        <!-- 3. Vikings -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/vikings.webp" alt="Vikings series poster"
+                                        width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">4K</span>
+                                    <h3>Vikings</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Action • History</span>
+                                        <span class="year-text">6 Seasons</span>
+                                    </div>
+                                    <p class="desc">A chieftain's relentless quest to conquer new worlds begins.
+                                    </p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
                         </div>
-                        <div class="content">
-                            <span class="badge">4K</span>
-                            <h3>Atomic Legacy</h3>
-                            <div class="meta-row">
-                                <span class="genre-text">Documentary • History</span>
-                                <span class="year-text">Docuseries</span>
-                            </div>
-                            <p class="desc">An illuminating multi-part documentary exploring the breakthrough physics
-                                and complex legacy of the mid-20th century.</p>
+
+                        <!-- 4. Rango: Desert Tales -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/rango-animation.webp"
+                                        alt="Rango animated series poster" width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">HD</span>
+                                    <h3>Rango: Desert Tales</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Animation • Adventure</span>
+                                        <span class="year-text">Season 1</span>
+                                    </div>
+                                    <p class="desc">Charming animated western escapades through the eccentric Mojave
+                                        frontier packed with witty humor and lively critters.</p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
                         </div>
-                        <div class="play" aria-hidden="true">▶</div>
-                    </article>
+
+                        <!-- 5. Atomic Legacy -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/oppenheimer.webp"
+                                        alt="Oppenheimer docuseries poster" width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">4K</span>
+                                    <h3>Atomic Legacy</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Documentary • History</span>
+                                        <span class="year-text">Docuseries</span>
+                                    </div>
+                                    <p class="desc">An illuminating multi-part documentary exploring the breakthrough
+                                        physics and complex legacy of the mid-20th century.</p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
+                        </div>
+
+                        <!-- 6. From -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/from.webp" alt="From series poster" width="300"
+                                        height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">HD</span>
+                                    <h3>From</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Horror • Mystery</span>
+                                        <span class="year-text">3 Seasons</span>
+                                    </div>
+                                    <p class="desc">Residents of a nightmare town search for a way out.
+                                    </p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
+                        </div>
+
+                        <!-- 7. Adventure Time -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/adventure-time.webp"
+                                        alt="Adventure Time series poster" width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">HD</span>
+                                    <h3>Adventure Time</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Animation • Comedy</span>
+                                        <span class="year-text">10 Seasons</span>
+                                    </div>
+                                    <p class="desc">Finn and Jake explore the bizarre Land of Ooo.
+                                    </p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
+                        </div>
+
+                        <!-- 8. Gravity Falls -->
+                        <div class="swiper-slide">
+                            <article class="movie-card glass">
+                                <div class="thumb">
+                                    <img src="assets/imgs/slider-movies/gravity-falls.webp"
+                                        alt="Gravity Falls series poster" width="300" height="450" loading="lazy">
+                                </div>
+                                <div class="content">
+                                    <span class="badge">HD</span>
+                                    <h3>Gravity Falls</h3>
+                                    <div class="meta-row">
+                                        <span class="genre-text">Animation • Mystery</span>
+                                        <span class="year-text">2 Seasons</span>
+                                    </div>
+                                    <p class="desc">Twins uncover the secrets of a strange summer town.
+                                    </p>
+                                </div>
+                                <div class="play" aria-hidden="true">▶</div>
+                            </article>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -815,42 +1198,50 @@
 
                 <div class="device-grid">
                     <div class="device-card glass reveal">
-                        <div class="device-icon" aria-hidden="true"><img src="assets/imgs/devices/smart-tv.webp" alt="" loading="lazy" width="56" height="56"></div>
+                        <div class="device-icon" aria-hidden="true"><img src="assets/imgs/devices/smart-tv.webp" alt=""
+                                loading="lazy" width="56" height="56"></div>
                         <h3>Smart TVs</h3>
                         <p>Samsung Tizen, LG webOS, Sony, Android TV & Google TV</p>
                     </div>
                     <div class="device-card glass reveal">
-                        <div class="device-icon" aria-hidden="true"><img src="assets/imgs/devices/firestick.jpg" alt="" loading="lazy" width="56" height="56"></div>
+                        <div class="device-icon" aria-hidden="true"><img src="assets/imgs/devices/firestick.jpg" alt=""
+                                loading="lazy" width="56" height="56"></div>
                         <h3>Amazon Fire TV</h3>
                         <p>Firestick 4K, Fire TV Cube & Fire OS television sets</p>
                     </div>
                     <div class="device-card glass reveal">
-                        <div class="device-icon" aria-hidden="true"><img src="assets/imgs/devices/apple.png" alt="" loading="lazy" width="56" height="56"></div>
+                        <div class="device-icon" aria-hidden="true"><img src="assets/imgs/devices/apple.png" alt=""
+                                loading="lazy" width="56" height="56"></div>
                         <h3>Apple Ecosystem</h3>
                         <p>Apple TV 4K, iPhone, iPad & macOS browser streaming</p>
                     </div>
                     <div class="device-card glass reveal">
-                        <div class="device-icon" aria-hidden="true"><img src="assets/imgs/devices/android.webp" alt="" loading="lazy" width="56" height="56"></div>
+                        <div class="device-icon" aria-hidden="true"><img src="assets/imgs/devices/android.webp" alt=""
+                                loading="lazy" width="56" height="56"></div>
                         <h3>Android Devices</h3>
                         <p>Android smartphones, tablets, TV boxes & Nvidia Shield</p>
                     </div>
                     <div class="device-card glass reveal">
-                        <div class="device-icon" aria-hidden="true"><img src="assets/imgs/devices/laptop.webp" alt="" loading="lazy" width="56" height="56"></div>
+                        <div class="device-icon" aria-hidden="true"><img src="assets/imgs/devices/laptop.webp" alt=""
+                                loading="lazy" width="56" height="56"></div>
                         <h3>Laptops & Desktops</h3>
                         <p>Web player for Chrome, Safari, Firefox & Microsoft Edge</p>
                     </div>
                     <div class="device-card glass reveal">
-                        <div class="device-icon" aria-hidden="true"><img src="assets/imgs/devices/remote-control.png" alt="" loading="lazy" width="56" height="56"></div>
+                        <div class="device-icon" aria-hidden="true"><img src="assets/imgs/devices/remote-control.png"
+                                alt="" loading="lazy" width="56" height="56"></div>
                         <h3>Streaming Receivers</h3>
                         <p>Formuler, MAG devices & dedicated IPTV media boxes</p>
                     </div>
                     <div class="device-card glass reveal">
-                        <div class="device-icon" aria-hidden="true"><img src="assets/imgs/devices/Web%20Browser.png" alt="" loading="lazy" width="56" height="56"></div>
+                        <div class="device-icon" aria-hidden="true"><img src="assets/imgs/devices/Web%20Browser.png"
+                                alt="" loading="lazy" width="56" height="56"></div>
                         <h3>Gaming Consoles</h3>
                         <p>Xbox & PlayStation compatible browser streaming</p>
                     </div>
                     <div class="device-card glass reveal">
-                        <div class="device-icon" aria-hidden="true"><img src="assets/imgs/devices/apple%20(1).webp" alt="" loading="lazy" width="56" height="56"></div>
+                        <div class="device-icon" aria-hidden="true"><img src="assets/imgs/devices/apple%20(1).webp"
+                                alt="" loading="lazy" width="56" height="56"></div>
                         <h3>Casting & AirPlay</h3>
                         <p>Chromecast, Apple AirPlay 2 & wireless screen sharing</p>
                     </div>
@@ -1002,7 +1393,9 @@
                     <p>Stream thousands of hit movies, popular television series, and timeless entertainment across all
                         your devices.</p>
                     <div class="cta-actions">
-                        <a class="btn btn-primary" href="https://wa.me/212613378841?text=hello%20usa%20view%20i%20want%20free%20trial%2024%20hours" target="_blank" rel="noopener">Start Free Trial</a>
+                        <a class="btn btn-primary"
+                            href="https://wa.me/212613378841?text=hello%20usa%20view%20i%20want%20free%20trial%2024%20hours"
+                            target="_blank" rel="noopener">Start Free Trial</a>
                         <a class="btn btn-secondary" href="index.html#plans">View Pricing Plans</a>
                     </div>
                 </div>
@@ -1042,6 +1435,7 @@
             Streaming availability may vary by location and device.</div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 
