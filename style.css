@@ -2163,6 +2163,78 @@ footer {
     margin: 0 0 4px;
 }
 
+/* ----- Downloader code cards (install-iptv-apps section) ----- */
+.setup-option {
+    margin-top: 16px;
+    padding: clamp(18px, 3vw, 26px);
+    border-radius: 22px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(10, 35, 66, 0.25));
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: transform .3s ease, border-color .3s ease;
+}
+
+.setup-option:hover {
+    transform: translateY(-4px);
+    border-color: rgba(214, 40, 40, 0.6);
+}
+
+.setup-option h3 {
+    font-size: 1.15rem;
+    margin: 0 0 8px;
+}
+
+.setup-option p {
+    color: var(--muted);
+    line-height: 1.65;
+    margin: 0 0 10px;
+}
+
+.setup-option p:last-of-type {
+    margin-bottom: 0;
+}
+
+.setup-option p:last-of-type + p {
+    margin-top: 8px;
+}
+
+.setup-option code {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 10px;
+    background: rgba(255, 209, 102, 0.14);
+    border: 1px solid rgba(255, 209, 102, 0.4);
+    color: #f6e1bd;
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    letter-spacing: .5px;
+    margin-right: 8px;
+}
+
+.copy-btn {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 209, 102, 0.5);
+    background: rgba(255, 209, 102, 0.15);
+    color: var(--gold);
+    font: inherit;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background .25s ease, color .25s ease, transform .15s ease;
+}
+
+.copy-btn:hover {
+    background: var(--gold);
+    color: #0b1730;
+    transform: translateY(-1px);
+}
+
+.copy-btn:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+}
+
 /* ----- Success message ----- */
 .guide-success {
     margin-top: 22px;

@@ -174,3 +174,42 @@
                 item.classList.toggle('active');
             });
         });
+
+        // Copy the Downloader installation codes to the clipboard.
+        // @param {string} elementId - the id of the <code> element holding the code
+        // @param {HTMLElement} button - the clicked copy button (for feedback)
+        function copyToClipboard(elementId, button) {
+            const codeEl = document.getElementById(elementId);
+            if (!codeEl) return;
+
+            const code = codeEl.textContent.trim();
+            const done = () => {
+                if (button) {
+                    const original = button.textContent;
+                    button.textContent = '✓ Copied';
+                    setTimeout(() => { button.textContent = original; }, 2000);
+                }
+            };
+
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(code).then(done).catch(() => fallbackCopy(code, done));
+            } else {
+                fallbackCopy(code, done);
+            }
+        }
+
+        function fallbackCopy(text, done) {
+            try {
+                const textarea = document.createElement('textarea');
+                textarea.value = text;
+                textarea.style.position = 'fixed';
+                textarea.style.opacity = '0';
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                textarea.remove();
+                done();
+            } catch (e) {
+                if (done) done();
+            }
+        }
