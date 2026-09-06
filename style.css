@@ -1924,6 +1924,36 @@ footer {
     .device-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    /* Guides page hero: .guides-page .hero-content has higher
+       specificity than the generic .hero-content overrides above,
+       so it needs its own rule to actually shrink on tablets. */
+    .guides-page .hero {
+        padding: 44px 0 20px;
+    }
+
+    .guides-page .hero-content {
+        gap: 26px;
+    }
+
+    .guides-page .hero h1 {
+        font-size: clamp(1.9rem, 5vw, 2.8rem);
+    }
+
+    .guides-page .hero p {
+        font-size: 0.98rem;
+        margin-top: 14px;
+    }
+
+    .guides-page .hero-media {
+        padding: 10px;
+        border-radius: 20px;
+        transform: rotate(0.8deg);
+    }
+
+    .guides-page .hero-media img {
+        border-radius: 14px;
+    }
 }
 
 @media (max-width: 680px) {
@@ -2045,6 +2075,66 @@ footer {
     .section-head {
         flex-direction: column;
         align-items: start;
+    }
+
+    /* Guides page hero on phones: these must override the
+       higher-specificity .guides-page rules, which the generic
+       .hero-content stacking rule above can't beat. */
+    .guides-page .hero {
+        padding: 36px 0 16px;
+    }
+
+    .guides-page .hero-content {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .guides-page .hero h1 {
+        font-size: clamp(1.7rem, 8vw, 2.2rem);
+        letter-spacing: -0.02em;
+    }
+
+    .guides-page .hero p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .guides-page .hero-actions {
+        margin-top: 18px;
+        gap: 10px;
+    }
+
+    .guides-page .hero-actions .btn {
+        flex: 1 1 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .guides-page .hero-media {
+        padding: 8px;
+        border-radius: 18px;
+        transform: none;
+        box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+    }
+
+    .guides-page .hero-media img {
+        border-radius: 12px;
+    }
+
+    /* Shrink the decorative blur circles so they don't dominate
+       the small hero or force horizontal overflow. */
+    .guides-page .hero::before {
+        width: 140px;
+        height: 140px;
+        top: -50px;
+        left: -70px;
+    }
+
+    .guides-page .hero::after {
+        width: 150px;
+        height: 150px;
+        right: -70px;
+        top: 10px;
     }
 }
 
