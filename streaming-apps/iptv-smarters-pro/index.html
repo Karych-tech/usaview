@@ -221,8 +221,8 @@
         .smarters-step {
             display: grid;
             grid-template-columns: 76px minmax(0, 1fr);
-            gap: 22px;
-            padding: 24px;
+            gap: 24px;
+            padding: 26px 24px;
             border-radius: 24px;
             background: linear-gradient(135deg, rgba(255, 255, 255, .05), rgba(10, 35, 66, .25));
             border: 1px solid rgba(255, 255, 255, .1);
@@ -234,6 +234,9 @@
             place-items: center;
             width: 64px;
             height: 64px;
+            align-self: start;
+            margin-top: 4px;
+            flex-shrink: 0;
             border-radius: 20px;
             background: rgba(255, 209, 102, .12);
             border: 1px solid rgba(255, 209, 102, .2);
@@ -266,6 +269,22 @@
             margin-top: 18px;
         }
 
+        .smarters-photo figcaption {
+            padding: 12px 14px;
+            border-top: 1px solid rgba(255, 255, 255, .09);
+            background: rgba(11, 15, 25, .55);
+            border-radius: 0 0 12px 12px;
+            margin-top: 12px;
+            color: #aebadd;
+            font-size: .9rem;
+            line-height: 1.55;
+            text-align: center;
+        }
+
+        .smarters-photo img {
+            margin-bottom: -4px;
+        }
+
         .smarters-field-grid,
         .smarters-feature-grid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -274,6 +293,7 @@
         .smarters-field,
         .smarters-feature {
             padding: 18px;
+            margin: 10px;
             border-radius: 18px;
             background: rgba(255, 255, 255, .045);
             border: 1px solid rgba(255, 255, 255, .09);
@@ -353,8 +373,28 @@
 
             .smarters-step {
                 grid-template-columns: 1fr;
-                gap: 14px;
-                padding: 20px 18px;
+                gap: 16px;
+                padding: 22px 18px;
+            }
+
+            .smarters-step .smarters-number {
+                width: 52px;
+                height: 52px;
+                font-size: 1.4rem;
+                margin-top: 0;
+            }
+
+            .smarters-step h3 {
+                margin-top: 2px;
+            }
+
+            .smarters-photo figcaption {
+                font-size: .85rem;
+                padding: 10px 12px;
+            }
+
+            .smarters-step ul {
+                padding-left: 18px;
             }
 
             .smarters-checklist,
@@ -465,7 +505,7 @@
                         although availability, menus and setup screens can vary depending on the device.
                     </p>
 
-                  
+
                     <p class="smarters-note">
                         <strong>Using USAView?</strong>
                         Your USAView account credentials are used to connect your subscription to the
