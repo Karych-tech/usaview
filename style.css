@@ -632,6 +632,75 @@ section {
     padding: 8px 0 36px;
 }
 
+/* ---- Swiper controls: dots + arrows in a row below the slider ---- */
+.swiper .swiper-pagination {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 6px;
+    width: 100%;
+}
+
+.swiper .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    margin: 0;
+    background: var(--border);
+    opacity: 1;
+    border-radius: 999px;
+    transition: width .3s ease, background .3s ease;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    width: 26px;
+    background: var(--gold);
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+    top: auto;
+    bottom: 18px;
+    margin-top: 0;
+    left: auto;
+    right: auto;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--glass);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(16px);
+    color: var(--white);
+    box-shadow: none;
+    transition: background .25s ease, transform .25s ease, border-color .25s ease;
+}
+
+.swiper .swiper-button-next::after,
+.swiper .swiper-button-prev::after {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.swiper .swiper-button-prev {
+    left: calc(50% - 96px);
+}
+
+.swiper .swiper-button-next {
+    left: calc(50% + 54px);
+}
+
+.swiper .swiper-button-next:hover,
+.swiper .swiper-button-prev:hover {
+    background: var(--red);
+    border-color: transparent;
+    transform: scale(1.08);
+}
+
+.swiper .swiper-button-next:active,
+.swiper .swiper-button-prev:active {
+    transform: scale(.94);
+}
+
 .swiper-wrapper {
     align-items: stretch;
 }
