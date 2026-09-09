@@ -717,7 +717,6 @@ section {
 
 .movie-card,
 .sports-card,
-.review-card,
 .plan-card,
 .feature-card,
 .device-card,
@@ -730,7 +729,6 @@ section {
 
 .movie-card:hover,
 .sports-card:hover,
-.review-card:hover,
 .plan-card:hover,
 .feature-card:hover,
 .device-card:hover,
@@ -1698,37 +1696,6 @@ section {
     font-size: .95rem;
 }
 
-.reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
-}
-
-.review-card {
-    padding: 24px;
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.review-head {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 14px;
-}
-
-.avatar {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.stars {
-    color: var(--gold);
-    letter-spacing: .12em;
-}
-
 .cta-box {
     padding: 56px 32px;
     border-radius: 30px;
@@ -1967,7 +1934,6 @@ footer {
     .features-grid,
     .apps-grid,
     .pricing-grid,
-    .reviews-grid,
     .footer-grid,
     .story-grid,
     .mission-grid,
@@ -2030,7 +1996,6 @@ footer {
     .features-grid,
     .apps-grid,
     .pricing-grid,
-    .reviews-grid,
     .footer-grid,
     .steps-grid,
     .included-grid,

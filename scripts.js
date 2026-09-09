@@ -171,7 +171,9 @@
         document.querySelectorAll('.faq-question').forEach(button => {
             button.addEventListener('click', () => {
                 const item = button.parentElement;
-                item.classList.toggle('active');
+                const isActive = item.classList.toggle('active');
+                // Keep assistive technology in sync with the visible open/closed state.
+                button.setAttribute('aria-expanded', isActive ? 'true' : 'false');
             });
         });
 
