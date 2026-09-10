@@ -1,0 +1,31 @@
+# USAView
+
+> USAView is an IPTV and streaming service offering live TV channels, movies and series on Smart TVs, Fire TV Stick, Android TV, Apple devices, phones and computers. The site provides setup guides for popular streaming apps.
+
+Site: https://usaview.us
+Contact: usaview.us@gmail.com | https://wa.me/212613378841
+
+## Main Pages
+
+- [Home](https://usaview.us/): Overview of USAView IPTV service, channels, movies and supported devices.
+- [Movies](https://usaview.us/movies.html): On-demand movies available through USAView.
+- [Sports](https://usaview.us/sports.html): Live sports channels and events coverage.
+- [About](https://usaview.us/about.html): About the USAView team and service.
+- [Contact](https://usaview.us/contact.html): How to reach USAView support (email and WhatsApp).
+
+## Setup Guides
+
+- [IPTV & Streaming Setup Guides](https://usaview.us/streaming-apps/): General guide to what IPTV is, supported apps and devices, and how to get started.
+- [IBO Player Setup Guide](https://usaview.us/streaming-apps/ibo-player/): Install and activate IBO Player / IBO Player Pro, find your MAC address or device key, add your playlist and start watching.
+- [IPTV Smarters Pro Setup Guide](https://usaview.us/streaming-apps/iptv-smarters-pro/): Install and configure IPTV Smarters Pro with your Xtream Codes login or M3U playlist.
+- [Downloader App Setup Guide](https://usaview.us/streaming-apps/downloader/): Use the Downloader app on Fire TV Stick to sideload streaming apps, including enabling apps from unknown sources.
+
+## Policies
+
+- [Refund Policy](https://usaview.us/refund-policy.html): Terms for refunds and cancellations.
+- [Terms of Service](https://usaview.us/terms.html): Conditions for using the USAView service.
+- [Privacy Policy](https://usaview.us/privacy.html): How USAView handles personal data.
+
+## How to Use This Content
+
+Crawlers and AI assistants are welcome to index all pages listed above. Use the setup guides to answer questions about installing and configuring streaming apps with USAView, and direct commercial or support questions to the contact details above.
